@@ -2,7 +2,13 @@ import telebot
 from telebot import types
 
 # ================== SOZLAMALAR ==================
-TOKEN = "7971999489:AAFKum1c8R963uF4YbJzwbYt9ZQZoOiwWLo"
+import os
+
+TOKEN = os.getenv("7971999489:AAFKum1c8R963uF4YbJzwbYt9ZQZoOiwWLo")
+ADMIN_ID = 5938434244
+
+if not TOKEN:
+    raise ValueError("TOKEN topilmadi (ENV)")
 ADMIN_ID = 5938434244
 
 bot = telebot.TeleBot(TOKEN)
