@@ -5,11 +5,14 @@
 
 app = 'mebel-savdo-bot'
 primary_region = 'fra'
+ kill_signal = "SIGINT"
+ kill_timeout = 5
   
-  [processes]
 [build]
- web = "python main.py"
   builder = 'paketobuildpacks/builder:base'
+ 
+ [processes]
+ web = "python main.py"
 
 [env]
   PORT = '8080'
