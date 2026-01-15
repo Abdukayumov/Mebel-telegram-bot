@@ -176,4 +176,6 @@ def clear_orders(message):
     bot.send_message(ADMIN_ID, "✅ Buyurtmalar tozalandi")
 
 # ================== RUN ==================
-bot.polling()
+print("Bot ishga tushdi...")
+bot.infinity_polling()
+
