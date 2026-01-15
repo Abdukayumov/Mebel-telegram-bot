@@ -179,3 +179,4 @@ def clear_orders(message):
 print("Bot ishga tushdi...")
 bot.infinity_polling()
 
+7971999489:AAG7GFdexQAUeyb13sTRLVczL-dH4f8aHRI
