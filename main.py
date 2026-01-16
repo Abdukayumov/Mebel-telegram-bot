@@ -8,11 +8,29 @@ ADMIN_ID = 5938434244
 bot = telebot.TeleBot(TOKEN)
 
 # ================= KATALOG =================
-PRODUCT = {
-    "id": "sharner_autsite",
-    "name": "Sharner Autsite",
-    "price": 7000,
-    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtSm6VPb1AtXVFEv7ttL9kffuxe0QkuK3D3FaBkfHDYg&s=10"
+CATALOG = {
+    "🔩 Sharnerlar": [
+        {
+            "id": "sharner_autsite",
+            "name": "Sharner Autsite",
+            "price": 7000,
+            "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtSm6VPb1AtXVFEv7ttL9kffuxe0QkuK3D3FaBkfHDYg&s=10"
+        },
+        {
+            "id": "Autsite_garbat",
+            "name": "Autsite Garbat",
+            "price": 7000,
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Hinge.jpg/640px-Hinge.jpg"
+        }
+    ],
+    "🧲 Magnitlar": [
+        {
+            "id": "magnit_kichik",
+            "name": "Magnit kichik",
+            "price": 2000,
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Magnet.jpg/640px-Magnet.jpg"
+        }
+    ]
 }
 
 user_state = {}  # chat_id -> step
